@@ -2,7 +2,7 @@
 
 Official package index for the **English Programming Language (EPL)**.
 
-[![Packages](https://img.shields.io/badge/packages-9-orange?style=flat-square)](https://abneeshsingh21.github.io/epl-packages-index/)
+[![Packages](https://img.shields.io/badge/packages-12-orange?style=flat-square)](https://abneeshsingh21.github.io/epl-packages-index/)
 [![Browse](https://img.shields.io/badge/browse-registry-blue?style=flat-square)](https://abneeshsingh21.github.io/epl-packages-index/)
 
 ## Install Packages
@@ -72,6 +72,9 @@ keywords = ["utils", "helpers"]
 
 | Package | Version | Description |
 |---------|---------|-------------|
+| **epl-http** | 1.0.0 | HTTP client — GET/POST/PUT/DELETE, auth, file transfers, webhooks, URL builder |
+| **epl-auth** | 1.0.0 | Authentication — JWT tokens, bcrypt hashing, API keys, sessions, OAuth2, rate limiting |
+| **epl-collections** | 1.0.0 | Data structures — Stack, Queue, PriorityQueue, LinkedList, HashMap, BST, Graph, Set |
 | epl-array | 1.0.0 | NumPy-like array operations |
 | epl-cloud | 1.0.0 | AWS S3, Lambda, SQS integration |
 | epl-dataframe | 1.0.0 | Pandas-like DataFrames |
