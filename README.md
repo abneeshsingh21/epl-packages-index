@@ -2,7 +2,7 @@
 
 Official package index for the **English Programming Language (EPL)**.
 
-[![Packages](https://img.shields.io/badge/packages-12-orange?style=flat-square)](https://abneeshsingh21.github.io/epl-packages-index/)
+[![Packages](https://img.shields.io/badge/packages-16-orange?style=flat-square)](https://abneeshsingh21.github.io/epl-packages-index/)
 [![Browse](https://img.shields.io/badge/browse-registry-blue?style=flat-square)](https://abneeshsingh21.github.io/epl-packages-index/)
 
 ## Install Packages
@@ -30,17 +30,6 @@ epl publish --repo yourname/my-package
 ```
 
 Your package is **automatically validated and registered** — no PRs, no approval wait.
-
-### Quality Gates (Automatic)
-
-Your package must pass these checks to be accepted:
-
-- Valid package name (no reserved names, no duplicates from other authors)
-- Valid semantic version (e.g., `1.0.0`)
-- Description at least 10 characters
-- Author and license specified
-- Entry point file exists
-- HTTPS download URL
 
 ### Package Structure
 
@@ -72,9 +61,13 @@ keywords = ["utils", "helpers"]
 
 | Package | Version | Description |
 |---------|---------|-------------|
-| **epl-http** | 1.0.0 | HTTP client — GET/POST/PUT/DELETE, auth, file transfers, webhooks, URL builder |
-| **epl-auth** | 1.0.0 | Authentication — JWT tokens, bcrypt hashing, API keys, sessions, OAuth2, rate limiting |
+| **epl-http** | 1.0.0 | HTTP client — GET/POST/PUT/DELETE, auth, file transfers, webhooks |
+| **epl-auth** | 1.0.0 | Authentication — JWT, bcrypt, API keys, sessions, OAuth2, rate limiting |
 | **epl-collections** | 1.0.0 | Data structures — Stack, Queue, PriorityQueue, LinkedList, HashMap, BST, Graph, Set |
+| **epl-crypto** | 1.0.0 | Cryptography — AES-256, RSA, digital signatures, file encryption, key derivation |
+| **epl-email** | 1.0.0 | Email — SMTP, HTML emails, attachments, templates, bulk sending |
+| **epl-cache** | 1.0.0 | Caching — LRU cache, TTL expiry, memoization, atomic counters |
+| **epl-validator** | 1.0.0 | Validation — schema rules, type checking, sanitization, pattern matching |
 | epl-array | 1.0.0 | NumPy-like array operations |
 | epl-cloud | 1.0.0 | AWS S3, Lambda, SQS integration |
 | epl-dataframe | 1.0.0 | Pandas-like DataFrames |
@@ -87,34 +80,15 @@ keywords = ["utils", "helpers"]
 
 ## API
 
-The index is served via GitHub Pages:
-
 ```
 https://abneeshsingh21.github.io/epl-packages-index/index.json
-```
-
-Per-package metadata:
-```
-https://raw.githubusercontent.com/abneeshsingh21/epl-packages-index/main/packages/<name>/metadata.json
-https://raw.githubusercontent.com/abneeshsingh21/epl-packages-index/main/packages/<name>/versions.json
 ```
 
 ## How It Works
 
 ```
-Author: epl publish --repo user/pkg
-         ↓
-    Creates GitHub Release (on author's repo)
-         ↓
-    Sends repository_dispatch to this repo
-         ↓
-    CI validates (quality gates)
-         ↓
-    Auto-registers in index.json
-         ↓
-User: epl install pkg-name
-         ↓
-    Fetches from author's GitHub Release
+Author: epl publish --repo user/pkg → CI validates → Auto-registers
+User:   epl install pkg-name → Fetches from author's GitHub Release
 ```
 
 Packages live on **authors' own repos**. This index is just the discovery layer.
