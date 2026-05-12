@@ -1,0 +1,18 @@
+{
+  "name": "epl-dataframe",
+  "description": "Pandas-like DataFrame operations for EPL - data manipulation, filtering, grouping",
+  "author": "EPL Community",
+  "license": "MIT",
+  "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-dataframe",
+  "homepage": "https://github.com/abneeshsingh21/EPL",
+  "keywords": [
+    "dataframe",
+    "pandas",
+    "csv",
+    "data",
+    "analysis",
+    "table"
+  ],
+  "created_at": 1778597637.4134963,
+  "updated_at": 1778597637.4134963
+}

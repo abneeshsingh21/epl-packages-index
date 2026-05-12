@@ -1,0 +1,66 @@
+name: Update Package Index
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'packages/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate index.json
+        run: |
+          python3 -c "
+          import json, os, time
+
+          packages_dir = 'packages'
+          all_packages = {}
+
+          for name in sorted(os.listdir(packages_dir)):
+              meta_path = os.path.join(packages_dir, name, 'metadata.json')
+              versions_path = os.path.join(packages_dir, name, 'versions.json')
+              if not os.path.isfile(meta_path):
+                  continue
+              with open(meta_path) as f:
+                  metadata = json.load(f)
+              with open(versions_path) as f:
+                  versions_data = json.load(f)
+              versions = versions_data.get('versions', [])
+              latest = versions[-1]['version'] if versions else '0.0.0'
+              all_packages[name] = {
+                  'metadata': metadata,
+                  'versions': versions,
+                  'latest': latest,
+              }
+
+          index = {
+              'packages': all_packages,
+              'updated_at': time.time(),
+              'total_packages': len(all_packages),
+              'registry': 'https://abneeshsingh21.github.io/epl-packages-index',
+          }
+
+          with open('index.json', 'w') as f:
+              json.dump(index, f, indent=2)
+          with open('docs/index.json', 'w') as f:
+              json.dump(index, f, indent=2)
+
+          print(f'Updated index: {len(all_packages)} packages')
+          "
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.json docs/index.json
+          git diff --cached --quiet || git commit -m "chore: Regenerate package index"
+          git push

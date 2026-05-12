@@ -1,0 +1,16 @@
+{
+  "versions": [
+    {
+      "version": "7.0.1",
+      "checksum": "",
+      "download_url": "https://github.com/abneeshsingh21/EPL/releases/download/v7.0.1/epl-db-7.0.1.zip",
+      "published_at": 1778597637.4134963,
+      "yanked": false,
+      "dependencies": {},
+      "python_requires": [],
+      "epl_version": ">=7.5.0",
+      "size": 0,
+      "entry": "src/main.epl"
+    }
+  ]
+}

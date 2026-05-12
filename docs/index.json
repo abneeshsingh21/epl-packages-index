@@ -1,0 +1,311 @@
+{
+  "packages": {
+    "epl-array": {
+      "metadata": {
+        "name": "epl-array",
+        "description": "NumPy-like array operations for EPL - create, manipulate, and compute with arrays",
+        "author": "EPL Community",
+        "license": "MIT",
+        "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-array",
+        "homepage": "https://github.com/abneeshsingh21/EPL",
+        "keywords": [
+          "array",
+          "math",
+          "numpy",
+          "linear-algebra",
+          "statistics"
+        ],
+        "created_at": 1778597637.4134963,
+        "updated_at": 1778597637.4134963
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "checksum": "",
+          "download_url": "https://github.com/abneeshsingh21/EPL/releases/download/v1.0.0/epl-array-1.0.0.zip",
+          "published_at": 1778597637.4134963,
+          "yanked": false,
+          "dependencies": {},
+          "python_requires": [
+            "numpy>=1.20.0"
+          ],
+          "epl_version": ">=7.5.0",
+          "size": 0,
+          "entry": "src/main.epl"
+        }
+      ],
+      "latest": "1.0.0"
+    },
+    "epl-cloud": {
+      "metadata": {
+        "name": "epl-cloud",
+        "description": "",
+        "author": "EPL Community",
+        "license": "MIT",
+        "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-cloud",
+        "homepage": "https://github.com/abneeshsingh21/EPL",
+        "keywords": [],
+        "created_at": 1778597637.4134963,
+        "updated_at": 1778597637.4134963
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "checksum": "",
+          "download_url": "https://github.com/abneeshsingh21/EPL/releases/download/v1.0.0/epl-cloud-1.0.0.zip",
+          "published_at": 1778597637.4134963,
+          "yanked": false,
+          "dependencies": {},
+          "python_requires": [],
+          "epl_version": ">=7.5.0",
+          "size": 0,
+          "entry": "src/main.epl"
+        }
+      ],
+      "latest": "1.0.0"
+    },
+    "epl-dataframe": {
+      "metadata": {
+        "name": "epl-dataframe",
+        "description": "Pandas-like DataFrame operations for EPL - data manipulation, filtering, grouping",
+        "author": "EPL Community",
+        "license": "MIT",
+        "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-dataframe",
+        "homepage": "https://github.com/abneeshsingh21/EPL",
+        "keywords": [
+          "dataframe",
+          "pandas",
+          "csv",
+          "data",
+          "analysis",
+          "table"
+        ],
+        "created_at": 1778597637.4134963,
+        "updated_at": 1778597637.4134963
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "checksum": "",
+          "download_url": "https://github.com/abneeshsingh21/EPL/releases/download/v1.0.0/epl-dataframe-1.0.0.zip",
+          "published_at": 1778597637.4134963,
+          "yanked": false,
+          "dependencies": {},
+          "python_requires": [
+            "pandas>=1.3.0"
+          ],
+          "epl_version": ">=7.5.0",
+          "size": 0,
+          "entry": "src/main.epl"
+        }
+      ],
+      "latest": "1.0.0"
+    },
+    "epl-db": {
+      "metadata": {
+        "name": "epl-db",
+        "description": "Supported EPL database facade package",
+        "author": "EPL Team",
+        "license": "MIT",
+        "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-db",
+        "homepage": "https://github.com/abneeshsingh21/EPL",
+        "keywords": [],
+        "created_at": 1778597637.4134963,
+        "updated_at": 1778597637.4134963
+      },
+      "versions": [
+        {
+          "version": "7.0.1",
+          "checksum": "",
+          "download_url": "https://github.com/abneeshsingh21/EPL/releases/download/v7.0.1/epl-db-7.0.1.zip",
+          "published_at": 1778597637.4134963,
+          "yanked": false,
+          "dependencies": {},
+          "python_requires": [],
+          "epl_version": ">=7.5.0",
+          "size": 0,
+          "entry": "src/main.epl"
+        }
+      ],
+      "latest": "7.0.1"
+    },
+    "epl-learn": {
+      "metadata": {
+        "name": "epl-learn",
+        "description": "Scikit-learn like machine learning for EPL - classification, regression, clustering",
+        "author": "EPL Community",
+        "license": "MIT",
+        "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-learn",
+        "homepage": "https://github.com/abneeshsingh21/EPL",
+        "keywords": [
+          "sklearn",
+          "machine-learning",
+          "classification",
+          "regression",
+          "clustering",
+          "ml"
+        ],
+        "created_at": 1778597637.4134963,
+        "updated_at": 1778597637.4134963
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "checksum": "",
+          "download_url": "https://github.com/abneeshsingh21/EPL/releases/download/v1.0.0/epl-learn-1.0.0.zip",
+          "published_at": 1778597637.4134963,
+          "yanked": false,
+          "dependencies": {
+            "epl-array": ">=1.0.0"
+          },
+          "python_requires": [
+            "scikit-learn>=1.0.0",
+            "numpy>=1.20.0"
+          ],
+          "epl_version": ">=7.5.0",
+          "size": 0,
+          "entry": "src/main.epl"
+        }
+      ],
+      "latest": "1.0.0"
+    },
+    "epl-plot": {
+      "metadata": {
+        "name": "epl-plot",
+        "description": "Matplotlib-like plotting for EPL - create visualizations in plain English",
+        "author": "EPL Community",
+        "license": "MIT",
+        "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-plot",
+        "homepage": "https://github.com/abneeshsingh21/EPL",
+        "keywords": [
+          "matplotlib",
+          "plotting",
+          "visualization",
+          "charts",
+          "graphs"
+        ],
+        "created_at": 1778597637.4134963,
+        "updated_at": 1778597637.4134963
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "checksum": "",
+          "download_url": "https://github.com/abneeshsingh21/EPL/releases/download/v1.0.0/epl-plot-1.0.0.zip",
+          "published_at": 1778597637.4134963,
+          "yanked": false,
+          "dependencies": {
+            "epl-array": ">=1.0.0"
+          },
+          "python_requires": [
+            "matplotlib>=3.5.0",
+            "numpy>=1.20.0"
+          ],
+          "epl_version": ">=7.5.0",
+          "size": 0,
+          "entry": "src/main.epl"
+        }
+      ],
+      "latest": "1.0.0"
+    },
+    "epl-science": {
+      "metadata": {
+        "name": "epl-science",
+        "description": "SciPy-like scientific computing for EPL - optimization, integration, signal processing",
+        "author": "EPL Community",
+        "license": "MIT",
+        "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-science",
+        "homepage": "https://github.com/abneeshsingh21/EPL",
+        "keywords": [
+          "scipy",
+          "science",
+          "optimization",
+          "statistics",
+          "integration",
+          "signal"
+        ],
+        "created_at": 1778597637.4134963,
+        "updated_at": 1778597637.4134963
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "checksum": "",
+          "download_url": "https://github.com/abneeshsingh21/EPL/releases/download/v1.0.0/epl-science-1.0.0.zip",
+          "published_at": 1778597637.4134963,
+          "yanked": false,
+          "dependencies": {
+            "epl-array": ">=1.0.0"
+          },
+          "python_requires": [
+            "scipy>=1.7.0",
+            "numpy>=1.20.0"
+          ],
+          "epl_version": ">=7.5.0",
+          "size": 0,
+          "entry": "src/main.epl"
+        }
+      ],
+      "latest": "1.0.0"
+    },
+    "epl-test": {
+      "metadata": {
+        "name": "epl-test",
+        "description": "Supported EPL testing facade package",
+        "author": "EPL Team",
+        "license": "MIT",
+        "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-test",
+        "homepage": "https://github.com/abneeshsingh21/EPL",
+        "keywords": [],
+        "created_at": 1778597637.4134963,
+        "updated_at": 1778597637.4134963
+      },
+      "versions": [
+        {
+          "version": "7.0.1",
+          "checksum": "",
+          "download_url": "https://github.com/abneeshsingh21/EPL/releases/download/v7.0.1/epl-test-7.0.1.zip",
+          "published_at": 1778597637.4134963,
+          "yanked": false,
+          "dependencies": {},
+          "python_requires": [],
+          "epl_version": ">=7.5.0",
+          "size": 0,
+          "entry": "src/main.epl"
+        }
+      ],
+      "latest": "7.0.1"
+    },
+    "epl-web": {
+      "metadata": {
+        "name": "epl-web",
+        "description": "Supported EPL web facade package",
+        "author": "EPL Team",
+        "license": "MIT",
+        "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-web",
+        "homepage": "https://github.com/abneeshsingh21/EPL",
+        "keywords": [],
+        "created_at": 1778597637.4134963,
+        "updated_at": 1778597637.4134963
+      },
+      "versions": [
+        {
+          "version": "7.0.1",
+          "checksum": "",
+          "download_url": "https://github.com/abneeshsingh21/EPL/releases/download/v7.0.1/epl-web-7.0.1.zip",
+          "published_at": 1778597637.4134963,
+          "yanked": false,
+          "dependencies": {},
+          "python_requires": [],
+          "epl_version": ">=7.5.0",
+          "size": 0,
+          "entry": "src/main.epl"
+        }
+      ],
+      "latest": "7.0.1"
+    }
+  },
+  "updated_at": 1778597637.4134963,
+  "total_packages": 9,
+  "registry": "https://abneeshsingh21.github.io/epl-packages-index"
+}

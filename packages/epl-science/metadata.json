@@ -1,0 +1,18 @@
+{
+  "name": "epl-science",
+  "description": "SciPy-like scientific computing for EPL - optimization, integration, signal processing",
+  "author": "EPL Community",
+  "license": "MIT",
+  "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-science",
+  "homepage": "https://github.com/abneeshsingh21/EPL",
+  "keywords": [
+    "scipy",
+    "science",
+    "optimization",
+    "statistics",
+    "integration",
+    "signal"
+  ],
+  "created_at": 1778597637.4134963,
+  "updated_at": 1778597637.4134963
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPL Package Registry</title>
+    <style>
+        :root { --bg: #0d1117; --surface: #161b22; --border: #30363d; --text: #f0f6fc; --dim: #8b949e; --accent: #ff4500; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 40px 20px; }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 { font-size: 2.5rem; margin-bottom: 8px; }
+        h1 span { color: var(--accent); }
+        .subtitle { color: var(--dim); margin-bottom: 32px; font-size: 1.1rem; }
+        .search { width: 100%; padding: 12px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; color: var(--text); font-size: 1rem; margin-bottom: 24px; outline: none; }
+        .search:focus { border-color: var(--accent); }
+        .stats { color: var(--dim); margin-bottom: 16px; font-size: 0.9rem; }
+        .pkg { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; margin-bottom: 12px; transition: border-color 0.2s; }
+        .pkg:hover { border-color: var(--accent); }
+        .pkg-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+        .pkg-name { font-weight: 600; font-size: 1.1rem; color: var(--accent); }
+        .pkg-version { background: #1f2937; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; color: var(--dim); }
+        .pkg-desc { color: var(--dim); font-size: 0.95rem; }
+        .pkg-meta { margin-top: 8px; font-size: 0.8rem; color: #6e7681; }
+        .install-cmd { margin-top: 32px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
+        .install-cmd code { color: var(--accent); font-family: 'JetBrains Mono', monospace; }
+        footer { margin-top: 48px; text-align: center; color: var(--dim); font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><span>EPL</span> Package Registry</h1>
+        <p class="subtitle">Official packages for the English Programming Language</p>
+        <input type="text" class="search" id="search" placeholder="Search packages..." autofocus>
+        <div class="stats" id="stats">Loading...</div>
+        <div id="packages"></div>
+        <div class="install-cmd">
+            <p>Install any package with:</p>
+            <code>pip install eplang && epl install &lt;package-name&gt;</code>
+        </div>
+        <footer>&copy; 2024-2026 Abneesh Singh | <a href="https://github.com/abneeshsingh21/EPL" style="color:var(--accent)">GitHub</a> | <a href="https://pypi.org/project/eplang/" style="color:var(--accent)">PyPI</a></footer>
+    </div>
+    <script>
+        let allPackages = [];
+        async function loadIndex() {
+            try {
+                const res = await fetch('index.json');
+                const data = await res.json();
+                allPackages = Object.values(data.packages);
+                document.getElementById('stats').textContent = `${data.total_packages} packages available`;
+                render(allPackages);
+            } catch (e) {
+                document.getElementById('stats').textContent = 'Failed to load index';
+            }
+        }
+        function render(pkgs) {
+            const el = document.getElementById('packages');
+            el.innerHTML = pkgs.map(p => `
+                <div class="pkg">
+                    <div class="pkg-header">
+                        <span class="pkg-name">${p.metadata.name}</span>
+                        <span class="pkg-version">v${p.latest}</span>
+                    </div>
+                    <div class="pkg-desc">${p.metadata.description}</div>
+                    <div class="pkg-meta">${p.metadata.author} &middot; ${p.metadata.license} &middot; ${(p.metadata.keywords||[]).join(', ')}</div>
+                </div>
+            `).join('');
+        }
+        document.getElementById('search').addEventListener('input', e => {
+            const q = e.target.value.toLowerCase();
+            const filtered = allPackages.filter(p =>
+                p.metadata.name.includes(q) || p.metadata.description.toLowerCase().includes(q) ||
+                (p.metadata.keywords||[]).some(k => k.includes(q))
+            );
+            render(filtered);
+        });
+        loadIndex();
+    </script>
+</body>
+</html>

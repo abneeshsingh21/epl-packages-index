@@ -1,0 +1,11 @@
+{
+  "name": "epl-db",
+  "description": "Supported EPL database facade package",
+  "author": "EPL Team",
+  "license": "MIT",
+  "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-db",
+  "homepage": "https://github.com/abneeshsingh21/EPL",
+  "keywords": [],
+  "created_at": 1778597637.4134963,
+  "updated_at": 1778597637.4134963
+}

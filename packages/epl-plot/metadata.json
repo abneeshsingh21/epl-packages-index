@@ -1,0 +1,17 @@
+{
+  "name": "epl-plot",
+  "description": "Matplotlib-like plotting for EPL - create visualizations in plain English",
+  "author": "EPL Community",
+  "license": "MIT",
+  "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-plot",
+  "homepage": "https://github.com/abneeshsingh21/EPL",
+  "keywords": [
+    "matplotlib",
+    "plotting",
+    "visualization",
+    "charts",
+    "graphs"
+  ],
+  "created_at": 1778597637.4134963,
+  "updated_at": 1778597637.4134963
+}
