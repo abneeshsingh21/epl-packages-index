@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "name": "epl-struct",
+    "description": "Structured data types and record definitions for EPL",
+    "author": "EPL Team",
+    "license": "Apache-2.0",
+    "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-struct",
+    "homepage": "https://github.com/abneeshsingh21/EPL",
+    "keywords": [
+      "struct",
+      "record",
+      "data",
+      "type",
+      "schema"
+    ],
+    "created_at": 1779014664.4186227,
+    "updated_at": 1779014664.4186227
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "checksum": "",
+      "download_url": "https://github.com/abneeshsingh21/EPL/releases/download/v7.5.9/epl-struct-1.0.0.zip",
+      "published_at": 1779014664.4186227,
+      "yanked": false,
+      "dependencies": {},
+      "python_requires": [],
+      "epl_version": ">=7.5.0",
+      "size": 0,
+      "entry": "src/main.epl"
+    }
+  ],
+  "latest": "1.0.0"
+}

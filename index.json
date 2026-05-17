@@ -5,7 +5,7 @@
         "name": "epl-array",
         "description": "NumPy-like array operations for EPL - create, manipulate, and compute with arrays",
         "author": "EPL Community",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-array",
         "homepage": "https://github.com/abneeshsingh21/EPL",
         "keywords": [
@@ -41,7 +41,7 @@
         "name": "epl-cloud",
         "description": "",
         "author": "EPL Community",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-cloud",
         "homepage": "https://github.com/abneeshsingh21/EPL",
         "keywords": [],
@@ -69,7 +69,7 @@
         "name": "epl-dataframe",
         "description": "Pandas-like DataFrame operations for EPL - data manipulation, filtering, grouping",
         "author": "EPL Community",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-dataframe",
         "homepage": "https://github.com/abneeshsingh21/EPL",
         "keywords": [
@@ -106,7 +106,7 @@
         "name": "epl-db",
         "description": "Supported EPL database facade package",
         "author": "EPL Team",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-db",
         "homepage": "https://github.com/abneeshsingh21/EPL",
         "keywords": [],
@@ -134,7 +134,7 @@
         "name": "epl-learn",
         "description": "Scikit-learn like machine learning for EPL - classification, regression, clustering",
         "author": "EPL Community",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-learn",
         "homepage": "https://github.com/abneeshsingh21/EPL",
         "keywords": [
@@ -174,7 +174,7 @@
         "name": "epl-plot",
         "description": "Matplotlib-like plotting for EPL - create visualizations in plain English",
         "author": "EPL Community",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-plot",
         "homepage": "https://github.com/abneeshsingh21/EPL",
         "keywords": [
@@ -213,7 +213,7 @@
         "name": "epl-science",
         "description": "SciPy-like scientific computing for EPL - optimization, integration, signal processing",
         "author": "EPL Community",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-science",
         "homepage": "https://github.com/abneeshsingh21/EPL",
         "keywords": [
@@ -253,7 +253,7 @@
         "name": "epl-test",
         "description": "Supported EPL testing facade package",
         "author": "EPL Team",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-test",
         "homepage": "https://github.com/abneeshsingh21/EPL",
         "keywords": [],
@@ -281,7 +281,7 @@
         "name": "epl-web",
         "description": "Supported EPL web facade package",
         "author": "EPL Team",
-        "license": "MIT",
+        "license": "Apache-2.0",
         "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-web",
         "homepage": "https://github.com/abneeshsingh21/EPL",
         "keywords": [],
@@ -303,9 +303,213 @@
         }
       ],
       "latest": "7.0.1"
+    },
+    "epl-algo": {
+      "metadata": {
+        "name": "epl-algo",
+        "description": "Sorting, searching, graph algorithms, and dynamic programming for EPL",
+        "author": "EPL Team",
+        "license": "Apache-2.0",
+        "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-algo",
+        "homepage": "https://github.com/abneeshsingh21/EPL",
+        "keywords": [
+          "algorithm",
+          "sorting",
+          "searching",
+          "graph",
+          "dynamic-programming"
+        ],
+        "created_at": 1779014664.4186227,
+        "updated_at": 1779014664.4186227
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "checksum": "",
+          "download_url": "https://github.com/abneeshsingh21/EPL/releases/download/v7.5.9/epl-algo-1.0.0.zip",
+          "published_at": 1779014664.4186227,
+          "yanked": false,
+          "dependencies": {},
+          "python_requires": [],
+          "epl_version": ">=7.5.0",
+          "size": 0,
+          "entry": "src/main.epl"
+        }
+      ],
+      "latest": "1.0.0"
+    },
+    "epl-datetime": {
+      "metadata": {
+        "name": "epl-datetime",
+        "description": "Date creation, formatting, parsing, and range operations for EPL",
+        "author": "EPL Team",
+        "license": "Apache-2.0",
+        "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-datetime",
+        "homepage": "https://github.com/abneeshsingh21/EPL",
+        "keywords": [
+          "datetime",
+          "date",
+          "time",
+          "calendar",
+          "formatting"
+        ],
+        "created_at": 1779014664.4186227,
+        "updated_at": 1779014664.4186227
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "checksum": "",
+          "download_url": "https://github.com/abneeshsingh21/EPL/releases/download/v7.5.9/epl-datetime-1.0.0.zip",
+          "published_at": 1779014664.4186227,
+          "yanked": false,
+          "dependencies": {},
+          "python_requires": [],
+          "epl_version": ">=7.5.0",
+          "size": 0,
+          "entry": "src/main.epl"
+        }
+      ],
+      "latest": "1.0.0"
+    },
+    "epl-functional": {
+      "metadata": {
+        "name": "epl-functional",
+        "description": "Functional programming patterns \u2014 composition, partial application, Option type",
+        "author": "EPL Team",
+        "license": "Apache-2.0",
+        "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-functional",
+        "homepage": "https://github.com/abneeshsingh21/EPL",
+        "keywords": [
+          "functional",
+          "compose",
+          "curry",
+          "option",
+          "monad"
+        ],
+        "created_at": 1779014664.4186227,
+        "updated_at": 1779014664.4186227
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "checksum": "",
+          "download_url": "https://github.com/abneeshsingh21/EPL/releases/download/v7.5.9/epl-functional-1.0.0.zip",
+          "published_at": 1779014664.4186227,
+          "yanked": false,
+          "dependencies": {},
+          "python_requires": [],
+          "epl_version": ">=7.5.0",
+          "size": 0,
+          "entry": "src/main.epl"
+        }
+      ],
+      "latest": "1.0.0"
+    },
+    "epl-math": {
+      "metadata": {
+        "name": "epl-math",
+        "description": "Number theory, combinatorics, statistics, and numerical methods for EPL",
+        "author": "EPL Team",
+        "license": "Apache-2.0",
+        "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-math",
+        "homepage": "https://github.com/abneeshsingh21/EPL",
+        "keywords": [
+          "math",
+          "statistics",
+          "combinatorics",
+          "number-theory",
+          "numerical"
+        ],
+        "created_at": 1779014664.4186227,
+        "updated_at": 1779014664.4186227
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "checksum": "",
+          "download_url": "https://github.com/abneeshsingh21/EPL/releases/download/v7.5.9/epl-math-1.0.0.zip",
+          "published_at": 1779014664.4186227,
+          "yanked": false,
+          "dependencies": {},
+          "python_requires": [],
+          "epl_version": ">=7.5.0",
+          "size": 0,
+          "entry": "src/main.epl"
+        }
+      ],
+      "latest": "1.0.0"
+    },
+    "epl-string": {
+      "metadata": {
+        "name": "epl-string",
+        "description": "Advanced string manipulation utilities for EPL",
+        "author": "EPL Team",
+        "license": "Apache-2.0",
+        "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-string",
+        "homepage": "https://github.com/abneeshsingh21/EPL",
+        "keywords": [
+          "string",
+          "text",
+          "manipulation",
+          "formatting",
+          "parsing"
+        ],
+        "created_at": 1779014664.4186227,
+        "updated_at": 1779014664.4186227
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "checksum": "",
+          "download_url": "https://github.com/abneeshsingh21/EPL/releases/download/v7.5.9/epl-string-1.0.0.zip",
+          "published_at": 1779014664.4186227,
+          "yanked": false,
+          "dependencies": {},
+          "python_requires": [],
+          "epl_version": ">=7.5.0",
+          "size": 0,
+          "entry": "src/main.epl"
+        }
+      ],
+      "latest": "1.0.0"
+    },
+    "epl-struct": {
+      "metadata": {
+        "name": "epl-struct",
+        "description": "Structured data types and record definitions for EPL",
+        "author": "EPL Team",
+        "license": "Apache-2.0",
+        "repository": "https://github.com/abneeshsingh21/EPL/tree/main/epl/official_packages/epl-struct",
+        "homepage": "https://github.com/abneeshsingh21/EPL",
+        "keywords": [
+          "struct",
+          "record",
+          "data",
+          "type",
+          "schema"
+        ],
+        "created_at": 1779014664.4186227,
+        "updated_at": 1779014664.4186227
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "checksum": "",
+          "download_url": "https://github.com/abneeshsingh21/EPL/releases/download/v7.5.9/epl-struct-1.0.0.zip",
+          "published_at": 1779014664.4186227,
+          "yanked": false,
+          "dependencies": {},
+          "python_requires": [],
+          "epl_version": ">=7.5.0",
+          "size": 0,
+          "entry": "src/main.epl"
+        }
+      ],
+      "latest": "1.0.0"
     }
   },
-  "updated_at": 1778618010.2236118,
-  "total_packages": 9,
+  "updated_at": 1779014664.4186227,
+  "total_packages": 15,
   "registry": "https://abneeshsingh21.github.io/epl-packages-index"
 }
